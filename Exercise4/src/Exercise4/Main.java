@@ -12,7 +12,7 @@ public class Main {
 		System.out.println("Total Price of Television: RM" + objTelevision.totalPrice());
 		System.out.println();
 	
-		System.out.println("========== Receipt ==========");
+		System.out.println("========== Sony ==========");
 		System.out.println(objSony);
 		System.out.println("Total Price After Discount(5%): RM" + objSony.getDiscount());
 		System.out.println("Amount of Balance: RM"	+ objSony.balance());
