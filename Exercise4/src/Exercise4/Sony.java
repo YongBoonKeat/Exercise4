@@ -1,5 +1,5 @@
 package Exercise4;
-//extend is the word to bring data from super class
+
 public class Sony extends Television{
 	private double payment;
 	
