@@ -1,10 +1,10 @@
 package Exercise4;
-
+//extend is the word to bring data from super class
 public class Sony extends Television{
 	private double payment;
 	
-	Sony(String b, String c, double p, int q, double py){
-		super(b,c,p,q);
+	Sony(String b, String m, double p, int q, double py){
+		super(b,m,p,q);
 		payment = py;
 	}
 	
