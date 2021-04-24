@@ -3,8 +3,8 @@ package Exercise4;
 public class Main {
 
 	public static void main(String[] args) {
-		Television objTelevision = new Television();
-		Sony objSony = new Sony("Sony","KD-50X80J",3099,2,10000);
+		Television objTelevision = new Television();//input from user use Scanner
+		Sony objSony = new Sony("Sony","KD-50X80J",3099,2,10000);//
 
 		System.out.println("==========================================");
 		System.out.println("==========Television Information==========");

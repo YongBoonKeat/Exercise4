@@ -1,6 +1,8 @@
 package Exercise4;
 import java.util.Scanner;
+//Television is super class
 public class Television {
+	
 	private String brand,model;
 	private double price;
 	private int quantity;

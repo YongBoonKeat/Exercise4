@@ -1,6 +1,8 @@
 package Exercise4;
-
+//Sony is subclass
+//extends to bring some data from super class
 public class Sony extends Television{
+	
 	private double payment;
 	
 	Sony(String b, String m, double p, int q, double py){
