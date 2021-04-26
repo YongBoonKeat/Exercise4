@@ -12,13 +12,13 @@ public class Main {
 		
 		System.out.println("=======Red Apple=======");
 		redApple objR =new redApple("Red Apple",10,2.8,"Red");
-		System.out.println(objR);
+		//System.out.println(objR);
 		System.out.println("Color of apple: " + objR.color());
 		System.out.println("Total price Red Apple : RM "+objR.totalprice());
 		
 		System.out.println("=======Green Apple=======");
 		greenApple objG =new greenApple("Green Apple",10,3,"Green");
-		System.out.println(objG);
+		//System.out.println(objG);
 		System.out.println("Color of apple: " + objG.color());
 		System.out.println("Total price Red Apple : RM "+objG.totalprice());
 		
