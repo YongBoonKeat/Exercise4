@@ -8,10 +8,10 @@ public class Mango extends Fruit{
 	
 	public Mango() {//Constructor with no argument
 		super(); 
-		quantity = 10;
-		price = 3.5;
-		weight = 150;
-		payment= 100;
+		quantity = 0;
+		price = 0;
+		weight = 0;
+		payment= 0;
 
 	}
 	public Mango(String name, int Q, double P,double W,double PY) {//Constructor with argument
@@ -21,21 +21,28 @@ public class Mango extends Fruit{
 		weight = W;
 		payment= PY;
 		
-		setFruit(name,Q,P,W);//call method //method for overloading
+		setFruit(name,Q,P,W,PY);//call method //method for overloading
 	}
-	public void setFruit(String name, int Q, double P,double W){ //overloading method
-		if (Q == Q)
+	public void setFruit(String name, int Q, double P,double W,double PY){ //overloading method
+		if (Q >= 0)
 	          quantity = Q;
 	    else 
-	    	System.out.println("-");
-		if (P == P)
+	    	quantity = 0;
+		
+		if (P >= 0)
 	          price = P;
 	    else 
-	    	System.out.println("-");
-		if (W == W)
+	    	price = 0;
+		
+		if (W >= 0)
 	          weight = W;
 	    else 
-	    	System.out.println("-");
+	    	 weight = 0;
+		
+		if (PY >= 0)
+	          payment = PY;
+	    else 
+	    	 payment = 0;
 
 	   } 
 	public double payment() {

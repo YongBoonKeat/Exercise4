@@ -6,8 +6,8 @@ public class Apple extends Fruit{
 	
 	public Apple() {//Constructor with no argument
 		super(); 
-		quantity = 10;
-		price = 2.5;
+		quantity = 0;
+		price = 0;
 
 	}
 	
@@ -21,14 +21,15 @@ public class Apple extends Fruit{
 	}
 	
 	public void setFruit(String name, int Q, double P){ //overloading method
-		if (Q == Q)
+		if (Q >= 0)
 	          quantity = Q;
 	    else 
-	    	System.out.println("-");
-		if (P == P)
+	    	quantity = 0;
+		
+		if (P >= 0)
 	          price = P;
 	    else 
-	    	System.out.println("-");
+	    	price = 0;
 	   } 
 
 	public double getQuantity(){

@@ -12,11 +12,11 @@ public class Main {
 		System.out.println("Apple\n"+ objA);
 		System.out.println("==============================");
 		//RedApple
-		redApple objRA = new redApple("Apple",10,2.8,"Red");
+		redApple objRA = new redApple("Apple",10,2.8,"Red","Sweet");
 		System.out.println("Red Apple\n"+ objRA);
 		//GreenApple
 		System.out.println("==============================");
-		greenApple objGA = new greenApple("Apple",10,3,"Green");
+		greenApple objGA = new greenApple("Apple",10,3,"Green","Sour");
 		System.out.println("Green Apple\n"+ objGA);
 		//Mango
 		System.out.println("==============================");

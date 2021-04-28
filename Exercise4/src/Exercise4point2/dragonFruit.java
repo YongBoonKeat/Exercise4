@@ -7,9 +7,9 @@ public class dragonFruit extends Fruit{
 	
 	public dragonFruit() {//Constructor with no argument
 		super(); 
-		quantity = 5;
-		price = 6;
-		weight = 600;
+		quantity = 0;
+		price = 0;
+		weight = 0;
 
 	}
 	public dragonFruit(String name,int Q, double P,double W) {//Constructor with argument
@@ -18,19 +18,25 @@ public class dragonFruit extends Fruit{
 		 price= P;
 		 weight= W;
 		 
-		 setFruit(name,Q,P);//call method //method for overloading
+		 setFruit(name,Q,P,W);//call method //method for overloading
 	}
-	public void setFruit(String name, int Q, double P){ //overloading method
-		if (Q == Q)
-			quantity = Q;
-		else 
-			System.out.println("-");
-		if (P == P)
-			price = P;
-		else 
-			System.out.println("-");
+	public void setFruit(String name, int Q, double P,double W){ //overloading method
+		if (Q >= 0)
+	          quantity = Q;
+	    else 
+	    	quantity = 0;
+		
+		if (P >= 0)
+	          price = P;
+	    else 
+	    	price = 0;
+		
+		if (W >= 0)
+	          weight = W;
+	    else 
+	    	 weight = 0;
    } 
-	public double totalprice() {
+	public double  totalprice() {
 		return this.quantity * this.price;
 	}
 	public double totalweight() {
