@@ -22,4 +22,7 @@ public class dragonFruit extends Fruit{
 	public double averageweight() {
 		return  totalweight() / this.quantity;
 	}
+	 public String toString() {
+			return "Quantity= "+ quantity + "\n" +"Price= RM" + price;
+	}
 }

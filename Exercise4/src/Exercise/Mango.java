@@ -29,5 +29,7 @@ public class Mango extends Fruit{
 	public double balance() {
 		return  payment - totalprice();
 	}
-	
+	 public String toString() {
+			return "Quantity= "+ quantity + "\n" +"Price= RM" + price;
+	}
 }

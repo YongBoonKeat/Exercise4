@@ -7,4 +7,5 @@ public class Fruit {
 		 this.name = name;
 		 System.out.println("Fruit constructor is invoked");
 	 }	
+	 
 }

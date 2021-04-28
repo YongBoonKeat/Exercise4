@@ -13,6 +13,8 @@ public class redApple extends Apple  {
 	public double totalprice() {
 		return super.quantity * super.price;
 	}
-	
+	 public String toString() {
+			return "Quantity= "+ quantity + "\n" +"Price= RM" + price;
+	}
 }
 

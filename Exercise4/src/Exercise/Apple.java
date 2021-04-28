@@ -14,4 +14,7 @@ public class Apple extends Fruit{
 	public double totalprice() {
 		return this.quantity * this.price;
 	}
+	 public String toString() {
+			return "Quantity= "+ quantity + "\n" +"Price= RM" + price;
+		}
 }
