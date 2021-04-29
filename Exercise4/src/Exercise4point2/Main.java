@@ -18,7 +18,7 @@ public class Main {
 		System.out.println("==============================");
 		greenApple objGA = new greenApple("Apple",10,3,"Green","Sour");
 		System.out.println("Green Apple\n"+ objGA);
-		//Mango
+		//Dragon Fruit
 		System.out.println("==============================");
 		dragonFruit objDF = new dragonFruit("Dragon Fruit",5,6,600);
 		System.out.println("Dragon Fruit\n"+ objDF);
