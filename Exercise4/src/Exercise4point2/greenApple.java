@@ -4,8 +4,8 @@ public class greenApple  extends Apple {
 	private String color;
 	private String taste;
     
-    public greenApple(){//constructor for sub class
-      super();//inherit data,method from super class (constructor with no argument)
+    public greenApple(){
+      super();
       color = "Green";
       taste = "Sour";
      }
