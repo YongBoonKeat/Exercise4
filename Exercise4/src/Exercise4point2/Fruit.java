@@ -1,23 +1,17 @@
 package Exercise4point2;
 
 public class Fruit {
-	private String name;
+	protected String name;
 	
 	public Fruit() { 
-		name = "Fruit";
+		this.name = " ";
 	}
-	public Fruit(String name) { 
-		
-		setFruit(name);
-	}
-	public void setFruit(String N) {
-		name = N;
-	}
-	public String getName() {
-		return name;
+	public Fruit(String name) { //overloading method
+		this.name = name;
+		System.out.println(name + " constructor is invoked.");
 	}
 	
 	public String toString() { //overriding method
-		return name +" constructor is invoked";
+		return "Name: " + name;
 	}
 }

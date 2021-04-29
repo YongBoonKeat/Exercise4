@@ -10,21 +10,12 @@ public class redApple extends Apple {
       taste = "Sweet";
      }
 
-   public redApple(String name, int Q, double P,String C,String T){
-     super(name,Q,P); 
+   public redApple(String N, int Q, double P,String C,String T){
+     super(N,Q,P); 
      color = C;
      taste = T;
-     
-     //Q=10 P=2.5
-     setFruit(name,Q,P,C); //method for overloading
-   }
 
-  public void setFruit(String name, int Q, double P,String C) { //overloading method
-     if (C == "Red")
-          color = C;
-     else 
-    	  color = "-";
- }
+   }
  
   	public double totalprice() {
 		return quantity * price;

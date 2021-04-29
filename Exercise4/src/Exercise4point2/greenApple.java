@@ -6,27 +6,18 @@ public class greenApple  extends Apple {
     
     public greenApple(){
       super();
-      color = "Green";
-      taste = "Sour";
+      this.color = "Green";
+      this.taste = "Sour";
      }
 
-   public greenApple(String name, int Q, double P,String C,String T){
-     super(name,Q,P); 
-     color = C;
-     taste = T;
-     //Q=10 P=2.5
-     setFruit(name,Q,P,C); //method for overloading
+   public greenApple(String N, int Q, double P,String C,String T){
+     super(N,Q,P); 
+     this.color = C;
+     this.taste = T;
    }
-
-  public void setFruit(String name, int Q, double P,String C) { //overloading method
-     if (C == "Green")
-          color = C;
-     else 
-    	  color = "-";
- }
  
   	public double totalprice() {
-		return quantity * price;
+		return this.quantity * price;
 	 }	
 	
 	public String toString() //overriding method

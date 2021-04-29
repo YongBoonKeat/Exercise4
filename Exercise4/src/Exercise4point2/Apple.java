@@ -6,21 +6,21 @@ public class Apple extends Fruit{
 	
 	public Apple() {//Constructor with no argument
 		super(); 
-		quantity = 0;
-		price = 0;
+		this.quantity = 0;
+		this.price = 0;
 
 	}
 	
-	public Apple(String name, int Q, double P) {//Constructor with argument
-		super(name);
-		quantity = Q;
-		price = P;
+	public Apple(String N, int Q, double P) {//Constructor with argument
+		super(N);
+		this.quantity = Q;
+		this.price = P;
 		
 		//Q=10,P=2.5
-		setFruit(name,Q,P);//call method //method for overloading
+		setFruit(N,Q,P);//call method //method for overloading
 	}
 	
-	public void setFruit(String name, int Q, double P){ //overloading method
+	public void setFruit(String N, int Q, double P){ //overloading method
 		if (Q >= 0)
 	          quantity = Q;
 	    else 
@@ -33,13 +33,13 @@ public class Apple extends Fruit{
 	   } 
 
 	public double getQuantity(){
-	    return quantity;
+	    return this.quantity;
 	}
 	public double getPrice(){
-	    return price;
+	    return this.price;
 	}
 	public double totalprice() {
-		return quantity * price;
+		return this.quantity * price;
 	 }	
 	
 	public String toString() //overriding method
