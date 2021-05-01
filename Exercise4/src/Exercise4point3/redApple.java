@@ -3,11 +3,13 @@ package Exercise4point3;
 public class redApple extends Apple{
 	private String color;
 	private String taste;
+	private double weight;
 	
-	public redApple(String name,int Q,double P, String C,String T){
+	public redApple(String name,int Q,double P, String C,String T,double W){
 		super(name,Q,P);
 		this.color = C;
 		this.taste = T;
+		this.weight = W;
 	}
 	public void color() {
 		if ((this.color == "Green")) 
@@ -21,13 +23,37 @@ public class redApple extends Apple{
 		return this.taste;
 	}
 	
+	//overloading with no parameter
+	public double totalprice(){
+	    return this.quantity*this.price;
+	}
+	//overloading with 1 parameter
+		public double totalprice(int Q){
+		    return Q*this.price;
+	}
+	//overloading with 2 parameter
+		public double totalprice(int Q,double P){
+		    return Q*P;
+	}
+	//overloading with no parameter
+		public double totalweight(){
+		    return quantity * this.weight;
+	}
+	//overloading with 1 parameter
+			public double totalweight(int Q){
+			    return Q*this.weight;
+	}
+	//overloading with 2 parameter
+			public double totalweight(int Q,double P){
+			    return Q*P;
+	}
+			
 	//overriding method
-		public double totalPrice() {
-			return this.price * this.quantity;
-		}
-		//overriding method
 				public String toString() {
-					return  "Quantity = "+quantity+"\n"+"Price = RM"+price+"\n"+"Total Price = RM"+ totalprice()+
+					return  "Quantity\t= " + quantity + 
+							"\nPrice \t\t= RM"+ price+ 
+							"\nTotal Price \t= RM" + totalprice()+
+							"\nTotal weight \t= " + totalweight()+
 							"\nTaste of green apple is " + taste;
 		}
 }

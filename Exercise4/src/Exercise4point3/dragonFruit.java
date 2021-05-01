@@ -25,15 +25,20 @@ public class dragonFruit extends Fruit{
 		}
 		
 	//overloading with 1 parameter
-		public double totalweight(double W) {
-			return (this.quantity * W);
-		}
 		public double totalweight(int Q) {
 			return (Q * this.weight);
+		}
+	//overloading with 2 parameter
+		public double totalweight(int Q,double W) {
+			return (Q * W)/1000;
 		}
 		
 	//overriding method
 		public String toString() {
-			return ("Quantity = "+quantity+"\n"+ "Weight = "+ weight + "\nTotal Weight = ");
+			return "Quantity \t= "+quantity+
+					"\nWeight \t\t= "+ weight +
+					"g\nTotal Weight(g) = "+ totalweight(5)+
+					"g\nTotal Weight(kg)= "+ totalweight(5,450) + "kg";
+					
 		}
 }

@@ -10,6 +10,8 @@ public class Fruit {
 	
 	public Fruit(String n) {//constructor with argument
 		this.name = n;
-		System.out.println("Fruit constructor is invoked");
+	}
+	public String toString() { //overriding method
+		return name + " constructor is invoked";
 	}
 }

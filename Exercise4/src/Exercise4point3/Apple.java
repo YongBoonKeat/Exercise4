@@ -21,14 +21,23 @@ public class Apple extends Fruit {
 	public double getPrice(){
 	    return this.price;
 	}
-	
+	//overloading with no parameter
 	public double totalprice(){
 	    return this.quantity*this.price;
 	}
-
+	//overloading with 1 parameter
+		public double totalprice(int Q){
+		    return Q*this.price;
+		}
+	//overloading with 2 parameter
+		public double totalprice(int Q,double P){
+		    return Q*P;
+		}
 	public String toString() //overriding method
 	{
-		return "Quantity = "+quantity+"\n"+"Price = RM"+price+"\n"+"Total Price = RM"+ totalprice();
+		return "Quantity\t= "+quantity+"\n"+ 
+			   "Price\t\t= RM"+price+"\n"+
+			   "Total Price \t= RM"+ totalprice();
 
 	}
 		
