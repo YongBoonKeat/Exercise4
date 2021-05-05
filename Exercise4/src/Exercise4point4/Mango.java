@@ -38,6 +38,7 @@ public class Mango extends Fruit{
 		int dis = 5; 
 		Payment(s, dis);
 		Balance(s,dis);
+		System.out.println(name);
 		System.out.println("Quantity="+Q+"\nPrice=RM"+P+"\nTotal Price=RM"+totalprice);
 		System.out.println("If you spend MORE than RM100, Get Special Discount and Free Shipping Fee!");
 		System.out.println("Total amount need to payment: RM" + Payment(s, dis));
