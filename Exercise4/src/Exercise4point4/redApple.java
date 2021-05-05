@@ -15,7 +15,6 @@ public class redApple extends Apple{
 	public String tasteGreenApple() {
 		return this.taste;
 	}
-
 	public String toString() {
 		return "Color of apple is " + color + 
 			   "\nTaste of red apple is " + taste;
