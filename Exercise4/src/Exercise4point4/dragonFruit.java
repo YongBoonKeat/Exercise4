@@ -14,23 +14,23 @@ public class dragonFruit extends Fruit{
 		//System.out.println(name + " constructor is invoked");
 		
 		if(totalweight <= 2000) {
-			totalPrice();
+			totalPrice();//overloading with no arguments because total weight less than 2000 gram/2kg 
 			System.out.println(name);
 			System.out.println("Total Weight(KG): " + totalWeight() + "kg");
 			System.out.println("If total weight LESS than 2kg, total price is RM" + totalPrice());
 		}
 		else if(totalweight > 2000 && totalweight <= 5000 ) {
-			double pp = 4.5;
-			totalPrice(pp);
+			double pp = 4.5;//total weight more than 2000 gram/2kg, price is 4.5
+			totalPrice(pp);//overloading with 1 arguments 
 			System.out.println(name);
 			System.out.println("Total Weight(KG): " + totalWeight() + "kg");
 			System.out.println("If total weight MORE than 2kg, More Cheaper Price!");
 			System.out.println("Total price: RM" + totalPrice(pp));
 		}
-		else if(totalweight > 5000 ) {
-			double pp = 4;
-			int dis = 3;
-			totalPrice(pp,dis);
+		else{
+			double pp = 4;//total weight more than 5000 gram/5kg, price is 4
+			int dis = 3;//total weight more than 5000 gram/5kg, get discount 3%
+			totalPrice(pp,dis);//overloading with 2 arguments 
 			System.out.println(name);
 			System.out.println("Total Weight(KG): " + totalWeight() + "kg");
 			System.out.println("If total weight MORE than 5kg, Get Special Discount!");

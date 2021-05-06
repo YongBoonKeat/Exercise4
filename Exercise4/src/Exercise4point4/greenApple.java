@@ -4,7 +4,7 @@ public class greenApple extends Apple{
 	private String color;
 	private String taste;
 	
-	public greenApple(String name,int Q,double P, String C,String T){
+	public greenApple(String name,int Q,double P, String C,String T){//Constructor with argument
 		super(name,Q,P);
 		this.color = C;
 		this.taste = T;
