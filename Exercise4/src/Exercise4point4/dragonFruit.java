@@ -19,7 +19,7 @@ public class dragonFruit extends Fruit{
 			System.out.println("Total Weight(KG): " + totalWeight() + "kg");
 			System.out.println("If total weight LESS than 2kg, total price is RM" + totalPrice());
 		}
-		else if(totalweight >= 2000 && totalweight <= 5000 ) {
+		else if(totalweight > 2000 && totalweight <= 5000 ) {
 			double pp = 4.5;
 			totalPrice(pp);
 			System.out.println(name);
@@ -27,7 +27,7 @@ public class dragonFruit extends Fruit{
 			System.out.println("If total weight MORE than 2kg, More Cheaper Price!");
 			System.out.println("Total price: RM" + totalPrice(pp));
 		}
-		else if(totalweight >= 5000 ) {
+		else if(totalweight > 5000 ) {
 			double pp = 4;
 			int dis = 3;
 			totalPrice(pp,dis);
