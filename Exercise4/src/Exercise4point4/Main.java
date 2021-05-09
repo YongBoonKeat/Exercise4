@@ -14,7 +14,7 @@ public class Main {
 		
 		//RedApple
 		System.out.println("========RED APPLE=======");
-		redApple objRA = new redApple("Red Apple",50,2.8,"Red","Sweet");
+		redApple objRA = new redApple("Red Apple",50,2.8,"Bright Red","Sweet");
 		System.out.println(objRA);
 		
 		//GreenApple
