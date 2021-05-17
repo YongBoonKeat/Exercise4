@@ -1,6 +1,6 @@
 package Exercise4_5;
 
-public class Apple extends Fruit implements Discount{
+public class Apple extends Fruit{
 	protected int quantity;
 	protected double price;
 	
@@ -13,8 +13,8 @@ public class Apple extends Fruit implements Discount{
 		if (this.quantity <= 10) {
 			totalPrice(); //overloading with no arguments because price is same 
 			System.out.println(name);
-			System.out.println("Quantity: " + this.quantity);
-			System.out.println("Price: RM" + this.price);
+			System.out.println("Quantity\t: " + this.quantity);
+			System.out.println("Price\t: RM" + this.price);
 			System.out.println("If quantity LESS than 10, Total price: RM" + totalPrice());
 		
 		}
@@ -22,27 +22,26 @@ public class Apple extends Fruit implements Discount{
 			System.out.println(name);
 			double pp = 2.4; // Buy more than 10 but less than 100, price is 2.4
 			totalPrice(pp); //overloading with 1 argument
-			System.out.println("Quantity: " + this.quantity);
+			System.out.println("Quantity\t: " + this.quantity);
 			System.out.println("If quantity MORE than 10, Get More Cheaper Price!");
-			System.out.println("Price: RM" + pp);
-			System.out.println("Total price: RM" + totalPrice(pp));
+			System.out.println("Price\t\t: RM" + pp);
+			System.out.println("Total price\t: RM" + totalPrice(pp));
 		}
 		else {
 			System.out.println(name);
 			double pp =2.2; //Buy more than 100, price is 2.2
 			double dis;
-			dis = discountRate();//Buy more than 100, get discount;
+			Discount A = new AppleDiscount();
+			dis = A.discountRate();//Buy more than 100, get discount;
 			totalPrice(pp, dis); //overloading with 2 arguments
-			System.out.println("Quantity: " + this.quantity);
+			System.out.println("Quantity\t: " + this.quantity);
 			System.out.println("If quantity MORE than 100, Get More Cheaper Price and Special Discount!");
-			System.out.println("Price: RM" + pp);
+			System.out.println("Price\t\t: RM" + pp);
 			System.out.println("Special Discount: " + (dis*100)+"%");
-			System.out.println("Total price: RM" + totalPrice(pp,dis));
+			System.out.println("Total price\t: RM" + totalPrice(pp,dis));
 			}
 	}
-	public double discountRate() {
-	      return 0.05; //Discount 5%	
-	}
+
 	public double totalPrice() {//overloading method
 		return this.price * this.quantity;
 	}

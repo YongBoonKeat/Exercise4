@@ -1,6 +1,6 @@
 package Exercise4_5;
 
-public class dragonFruit extends Fruit implements Discount{
+public class dragonFruit extends Fruit{
 	private int quantity;
 	private double weight;
 	private double price;
@@ -25,20 +25,21 @@ public class dragonFruit extends Fruit implements Discount{
 			System.out.println(name);
 			System.out.println("Total Weight(KG): " + totalWeight() + "kg");
 			System.out.println("If total weight MORE than 2kg,Get More Cheaper Price!");
-			System.out.println("Price: RM" + pp);
-			System.out.println("Total price: RM" + totalPrice(pp));
+			System.out.println("Price\t\t: RM" + pp);
+			System.out.println("Total price\t: RM" + totalPrice(pp));
 		}
 		else{
 			double pp = 4;//total weight more than 5000 gram/5kg, price is 4
 			double dis;//total weight more than 5000 gram/5kg, get discount 3%
-			dis = discountRate();
+			Discount DF = new DragonFruitDiscount();
+			dis = DF.discountRate();
 			totalPrice(pp,dis);//overloading with 2 arguments 
 			System.out.println(name);
 			System.out.println("Total Weight(KG): " + totalWeight() + "kg");
 			System.out.println("If total weight MORE than 5kg, Get More Cheaper Price and Special Discount!");
-			System.out.println("Price: RM" + pp);
+			System.out.println("Price\t\t: RM" + pp);
 			System.out.println("Special Discount: " + (dis*100)+"%");
-			System.out.println("Total price: RM" + totalPrice(pp,dis));
+			System.out.println("Total price\t: RM" + totalPrice(pp,dis));
 	}
 	}
 	public void taste(String C) {
@@ -49,9 +50,7 @@ public class dragonFruit extends Fruit implements Discount{
 		else
 			System.out.println("-");
 	}
-	public double discountRate() {
-	      return 0.03; //Discount 3%	
-	}
+
 	public double totalWeight() {
 		return (this.weight * this.quantity)/1000;
 	}

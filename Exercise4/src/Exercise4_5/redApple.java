@@ -1,6 +1,6 @@
 package Exercise4_5;
 
-public class redApple extends Apple implements Discount{
+public class redApple extends Apple{
 	private String color;
 	private String taste;
 	private String place;
@@ -12,9 +12,7 @@ public class redApple extends Apple implements Discount{
 		this.taste = T;
 		this.place = place;
 	}
-	public double discountRate() {
-	      return 0.04; //4%	
-	}
+
 	public String Place(){
 		return this.place;
 	}

@@ -1,5 +1,6 @@
 package Exercise4_5;
 
-interface Discount {
-	double discountRate();//method with no body 
+public interface Discount {//similar to abstraction for super class
+	//discount rate is a super class
+	double discountRate();//heading method with no body 
 }
