@@ -1,6 +1,6 @@
 package Exercise4point5;
 
-public class greenApple extends Apple implements Discount {
+public class greenApple extends Apple {
 	private String color;
 	private String taste;
 	private String place;
@@ -12,9 +12,7 @@ public class greenApple extends Apple implements Discount {
 		this.taste = T;
 		this.place = place;
 	}
-	public double discountRate() {
-	      return 0.03; //3%	
-	}
+
 	public String Place(){
 		return this.place;
 	}
@@ -25,7 +23,7 @@ public class greenApple extends Apple implements Discount {
 		return this.taste;
 	}
 	public String toString() {
-		return "Color of apple is " + this.color + 
+		return "Color\t\t: " + this.color + 
 			   "\nTaste of green apple is " + this.taste+
 			   "\nGreen Apple import from " + this.place;
 	}
